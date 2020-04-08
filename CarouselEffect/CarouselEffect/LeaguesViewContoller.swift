@@ -11,11 +11,23 @@ import UIKit
 class LeaguesViewContoller: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var leagues = League.fetchLeagues()
+    let cellScale: CGFloat = 0.6
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        let screenSize = UIScreen.main.bounds.size
+//        let cellWidth = floor(screenSize.width * cellScale)
+//        let cellHeight = floor(screenSize.height * cellScale)
+//        let insetX = (view.bounds.width - cellWidth) / 2.0
+//        let insetY = (view.bounds.height - cellHeight) / 2.0
+//
+//        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+//        layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+//        collectionView.contentInset = UIEdgeInsets(top: insetY, left: insetX, bottom: insetY, right: insetX)
+        
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
 }
 
@@ -40,5 +52,20 @@ extension LeaguesViewContoller: UICollectionViewDataSource {
         
         return cell
     }
-    
+}
+
+extension LeaguesViewContoller: UIScrollViewDelegate, UICollectionViewDelegate {
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let layout = collectionView!.collectionViewLayout as! UICollectionViewFlowLayout
+        
+        let cellWidthIncludingSpace = layout.itemSize.width + layout.minimumLineSpacing
+        
+        var offset = targetContentOffset.pointee
+        let index = (offset.x + scrollView.contentInset.left) / cellWidthIncludingSpace
+        let roundedIndex = round(index)
+        
+        offset = CGPoint(x: roundedIndex * cellWidthIncludingSpace - scrollView.contentInset.left, y: scrollView.contentInset.top)
+        
+        targetContentOffset.pointee = offset
+    }
 }

@@ -20,24 +20,28 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="268"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="20" id="tHw-2F-QJg">
-                                    <size key="itemSize" width="358" height="177"/>
+                                    <size key="itemSize" width="383" height="177"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LeagueCollectionViewCell" id="exw-ml-3nI" customClass="LeagueCollectionViewCell" customModule="CarouselEffect" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="-144" width="988" height="556"/>
+                                        <rect key="frame" x="15" y="45.5" width="383" height="177"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mrq-eU-J3O">
-                                            <rect key="frame" x="0.0" y="0.0" width="988" height="556"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="177"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UEFA" translatesAutoresizingMaskIntoConstraints="NO" id="7GD-G7-qMr">
-                                                    <rect key="frame" x="0.0" y="180" width="380" height="376"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UEFA" translatesAutoresizingMaskIntoConstraints="NO" id="BWb-Dt-qsA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="177"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="177" id="Ng4-eo-I1X"/>
+                                                        <constraint firstAttribute="width" constant="383" id="lJ9-ts-1zJ"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UEFA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wx7-q7-eUF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="349" height="172"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="172"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,22 +49,15 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="7GD-G7-qMr" secondAttribute="bottom" id="0lb-jp-UrM"/>
-                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="1I8-oP-X41"/>
-                                                <constraint firstAttribute="trailing" secondItem="7GD-G7-qMr" secondAttribute="trailing" id="65q-08-oIN"/>
-                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="8GR-hn-gku"/>
-                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="9hI-Ne-QaN"/>
-                                                <constraint firstAttribute="bottom" secondItem="7GD-G7-qMr" secondAttribute="bottom" id="Db9-cs-gHE"/>
-                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="NtM-B4-EOp"/>
-                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="WYI-yG-Gdf"/>
-                                                <constraint firstAttribute="bottom" secondItem="7GD-G7-qMr" secondAttribute="bottom" id="Wpe-c0-Cqs"/>
-                                                <constraint firstAttribute="trailing" secondItem="7GD-G7-qMr" secondAttribute="trailing" id="afJ-x4-pfJ"/>
-                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="gRi-hp-YIE"/>
-                                                <constraint firstAttribute="trailing" secondItem="7GD-G7-qMr" secondAttribute="trailing" id="wsf-hf-aHe"/>
+                                                <constraint firstAttribute="trailing" secondItem="BWb-Dt-qsA" secondAttribute="trailing" id="HoA-Uy-gSZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="BWb-Dt-qsA" secondAttribute="bottom" id="X9b-Pz-eeL"/>
+                                                <constraint firstItem="BWb-Dt-qsA" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="YKG-29-BdD"/>
+                                                <constraint firstItem="BWb-Dt-qsA" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="ZTR-Wh-8Vq"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="383" height="177"/>
                                         <connections>
-                                            <outlet property="leagueImageView" destination="7GD-G7-qMr" id="GhU-Dg-VCA"/>
+                                            <outlet property="leagueImageView" destination="BWb-Dt-qsA" id="i7G-ks-WrE"/>
                                             <outlet property="leagueLabel" destination="Wx7-q7-eUF" id="FgA-vO-mma"/>
                                         </connections>
                                     </collectionViewCell>
