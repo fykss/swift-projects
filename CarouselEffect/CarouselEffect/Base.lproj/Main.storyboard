@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XVD-1N-gHF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leagues View Contoller-->
+        <scene sceneID="yTv-lx-CCf">
+            <objects>
+                <viewController id="XVD-1N-gHF" customClass="LeaguesViewContoller" customModule="CarouselEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j6R-OI-sFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="98i-PB-EMK">
+                                <rect key="frame" x="0.0" y="144" width="414" height="268"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="20" id="tHw-2F-QJg">
+                                    <size key="itemSize" width="358" height="177"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LeagueCollectionViewCell" id="exw-ml-3nI" customClass="LeagueCollectionViewCell" customModule="CarouselEffect" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="-144" width="988" height="556"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mrq-eU-J3O">
+                                            <rect key="frame" x="0.0" y="0.0" width="988" height="556"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="UEFA" translatesAutoresizingMaskIntoConstraints="NO" id="7GD-G7-qMr">
+                                                    <rect key="frame" x="0.0" y="180" width="380" height="376"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UEFA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wx7-q7-eUF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="349" height="172"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="7GD-G7-qMr" secondAttribute="bottom" id="0lb-jp-UrM"/>
+                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="1I8-oP-X41"/>
+                                                <constraint firstAttribute="trailing" secondItem="7GD-G7-qMr" secondAttribute="trailing" id="65q-08-oIN"/>
+                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="8GR-hn-gku"/>
+                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="9hI-Ne-QaN"/>
+                                                <constraint firstAttribute="bottom" secondItem="7GD-G7-qMr" secondAttribute="bottom" id="Db9-cs-gHE"/>
+                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="NtM-B4-EOp"/>
+                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="top" secondItem="Mrq-eU-J3O" secondAttribute="top" id="WYI-yG-Gdf"/>
+                                                <constraint firstAttribute="bottom" secondItem="7GD-G7-qMr" secondAttribute="bottom" id="Wpe-c0-Cqs"/>
+                                                <constraint firstAttribute="trailing" secondItem="7GD-G7-qMr" secondAttribute="trailing" id="afJ-x4-pfJ"/>
+                                                <constraint firstItem="7GD-G7-qMr" firstAttribute="leading" secondItem="Mrq-eU-J3O" secondAttribute="leading" id="gRi-hp-YIE"/>
+                                                <constraint firstAttribute="trailing" secondItem="7GD-G7-qMr" secondAttribute="trailing" id="wsf-hf-aHe"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="leagueImageView" destination="7GD-G7-qMr" id="GhU-Dg-VCA"/>
+                                            <outlet property="leagueLabel" destination="Wx7-q7-eUF" id="FgA-vO-mma"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="98i-PB-EMK" firstAttribute="trailing" secondItem="p0p-99-Q3Y" secondAttribute="trailing" id="7pS-j3-47i"/>
+                            <constraint firstItem="98i-PB-EMK" firstAttribute="leading" secondItem="p0p-99-Q3Y" secondAttribute="leading" id="FxX-ze-Bro"/>
+                            <constraint firstItem="p0p-99-Q3Y" firstAttribute="bottom" secondItem="98i-PB-EMK" secondAttribute="bottom" constant="450" id="GKn-GU-qoD"/>
+                            <constraint firstItem="98i-PB-EMK" firstAttribute="top" secondItem="p0p-99-Q3Y" secondAttribute="top" constant="100" id="xvt-qp-jJY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p0p-99-Q3Y"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="98i-PB-EMK" id="Spo-Th-zXC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZI-r5-8cC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-195.6521739130435" y="-147.99107142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UEFA" width="988" height="556"/>
+    </resources>
+</document>
