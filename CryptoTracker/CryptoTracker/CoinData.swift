@@ -15,7 +15,7 @@ class CoinData {
     private init() {
         let symbols = ["BTC", "ETH"]
         
-        CoinManager().fetchCoin(symbols: symbols[0])
+        let coinManager = CoinManager()
         
         for symbol in symbols {
             let coin = Coin(symbol: symbol)
@@ -24,63 +24,43 @@ class CoinData {
     }
 }
 
-class Coin: Decodable {
-    var symbol: String = ""
-    //    var image: UIImage?
-    var price: Double = 0.0
-    var amount: Double = 0.0
-    var historicalData = [Double]()
-    
-    init(symbol: String) {
-        self.symbol = symbol
-    }
-}
-
 class CoinManager {
     let key = ""
     let coinUrl = "https://min-api.cryptocompare.com/data/price?fsym="
     
     func fetchCoin(symbols: String) {
-        performRequest(with: "\(coinUrl)\(symbols)tsyms=USD")
+        performRequest(with: "\(coinUrl)\(symbols)&tsyms=USD")
     }
     
-    private func performRequest(with urlString: String) {
+    func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print("Error \(String(describing: error))")
-                    return
+                    print("Error \(error)")
                 }
                 
                 if let safeData = data {
-                    if let coin = self.parseJSON(safeData) {
-                        print(coin)
-                    }
+                    let decoder = JSONDecoder()
+                    let coin = try decoder.decode(Coin, from: safeData)
+//                    print(decodeData.USD)
                 }
+                
             }
             task.resume()
         }
+        
     }
+}
+
+struct Coin: Decodable {
+    var symbol: String = ""
+    //    var image: UIImage?
+    var USD: Double = 0.0
+    var amount: Double = 0.0
+    var historicalData = [Double]()
     
-    private func parseJSON(_ coinData: Data) -> Coin? {
-        let decoder = JSONDecoder()
-        do {
-            let decodeData = try decoder.decode(Coin.self, from: coinData)
-            
-            print(decodeData)
-            //
-            //            let id = decodeData.weather[0].id
-            //            let temp = decodeData.main.temp - 273.15
-            //            let name = decodeData.name
-            //
-            //            let weather = WeatherModel(conditionId: id, cityName: name, temperature: temp)
-            
-            
-            return nil
-            
-        } catch {
-            return nil
-        }
+    init(symbol: String) {
+        self.symbol = symbol
     }
 }
