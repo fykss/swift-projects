@@ -8,32 +8,29 @@
 
 import UIKit
 
-class ViewController: UITableViewController, DataApiMangerDelegate {
+class ViewController: UITableViewController {
 
-    var dataApiManager = DataApiManger()
+    var nature = Bundle.main.decode([Nature].self, from: "examples.json")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataApiManager.delegate = self
-        
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Countries"
+        title = "Nature"
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+        return nature.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let natureOne = nature[indexPath.row]
+        
+        cell.textLabel?.text = natureOne.name
         
         return cell
     }
-    
-    func didUpdateData(dataApi: DataApi) {
-        print(dataApi.api.results)
-    }
 }
-
 

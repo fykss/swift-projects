@@ -15,6 +15,9 @@
 		9E8E091024406F2B00CA9AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E090E24406F2B00CA9AC9 /* LaunchScreen.storyboard */; };
 		9E8E091A24407B5800CA9AC9 /* DataApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E091924407B5800CA9AC9 /* DataApi.swift */; };
 		9E8E091C2440962300CA9AC9 /* DataApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E091B2440962300CA9AC9 /* DataApiManager.swift */; };
+		9E8E09202442002F00CA9AC9 /* examples.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E091F2442002F00CA9AC9 /* examples.json */; };
+		9E8E0922244200A200CA9AC9 /* Bundle-Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E0921244200A200CA9AC9 /* Bundle-Decoding.swift */; };
+		9E8E09242442023500CA9AC9 /* Nature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E09232442023500CA9AC9 /* Nature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		9E8E091124406F2B00CA9AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E8E091924407B5800CA9AC9 /* DataApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataApi.swift; sourceTree = "<group>"; };
 		9E8E091B2440962300CA9AC9 /* DataApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataApiManager.swift; sourceTree = "<group>"; };
+		9E8E091F2442002F00CA9AC9 /* examples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = examples.json; sourceTree = "<group>"; };
+		9E8E0921244200A200CA9AC9 /* Bundle-Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decoding.swift"; sourceTree = "<group>"; };
+		9E8E09232442023500CA9AC9 /* Nature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,28 @@
 		9E8E090224406F2500CA9AC9 /* HighLifeUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9E8E091D2441FFCF00CA9AC9 /* Manager Api Example */,
 				9E8E090324406F2500CA9AC9 /* AppDelegate.swift */,
 				9E8E090524406F2500CA9AC9 /* SceneDelegate.swift */,
 				9E8E090724406F2500CA9AC9 /* ViewController.swift */,
+				9E8E0921244200A200CA9AC9 /* Bundle-Decoding.swift */,
+				9E8E09232442023500CA9AC9 /* Nature.swift */,
 				9E8E090924406F2500CA9AC9 /* Main.storyboard */,
 				9E8E090C24406F2B00CA9AC9 /* Assets.xcassets */,
 				9E8E090E24406F2B00CA9AC9 /* LaunchScreen.storyboard */,
 				9E8E091124406F2B00CA9AC9 /* Info.plist */,
+				9E8E091F2442002F00CA9AC9 /* examples.json */,
+			);
+			path = HighLifeUIKit;
+			sourceTree = "<group>";
+		};
+		9E8E091D2441FFCF00CA9AC9 /* Manager Api Example */ = {
+			isa = PBXGroup;
+			children = (
 				9E8E091924407B5800CA9AC9 /* DataApi.swift */,
 				9E8E091B2440962300CA9AC9 /* DataApiManager.swift */,
 			);
-			path = HighLifeUIKit;
+			path = "Manager Api Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8E09202442002F00CA9AC9 /* examples.json in Resources */,
 				9E8E091024406F2B00CA9AC9 /* LaunchScreen.storyboard in Resources */,
 				9E8E090D24406F2B00CA9AC9 /* Assets.xcassets in Resources */,
 				9E8E090B24406F2500CA9AC9 /* Main.storyboard in Resources */,
@@ -144,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E8E0922244200A200CA9AC9 /* Bundle-Decoding.swift in Sources */,
 				9E8E090824406F2500CA9AC9 /* ViewController.swift in Sources */,
 				9E8E091C2440962300CA9AC9 /* DataApiManager.swift in Sources */,
+				9E8E09242442023500CA9AC9 /* Nature.swift in Sources */,
 				9E8E090424406F2500CA9AC9 /* AppDelegate.swift in Sources */,
 				9E8E090624406F2500CA9AC9 /* SceneDelegate.swift in Sources */,
 				9E8E091A24407B5800CA9AC9 /* DataApi.swift in Sources */,

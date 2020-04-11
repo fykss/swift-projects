@@ -1,0 +1,65 @@
+
+[
+    {
+        "name": "Angel Falls",
+        "location": "Venezuela",
+        "description": "Venezuela overflows with natural wonders, including the world's highest waterfall—the 3,212-foot cascades of Angel Falls, located in the UNESCO-protected Canaima National Park. Canaima is by far the country's most popular attraction, and the falls stretch an astounding 19 times higher than Niagara Falls. Bonus: Pixar animators used the location as inspiration for Paradise Falls in Up—so you know it's good.",
+        "cost": 2000
+    },
+    {
+        "name": "Antelope Canyon",
+        "location": "Arizona",
+        "description": "Antelope Canyon is a slot canyon (and serious Instagram darling) in the American Southwest. Its Navajo name translates to “the place where water runs through rocks”—an allusion to the canyon’s creation through erosion. The narrow, undulating spaces between rock formations allow for vivid patterns when sunlight filters through the striated stone.",
+        "cost": 3000
+    },
+    {
+        "name": "Atacama Desert",
+        "location": "Chile",
+        "description": "Have you ever dreamed of exploring the moon? A trip to Valle de la Luna in Chile’s Atacama Desert is a much shorter flight. Years of erosion have left behind jagged peaks, dry riverbeds, and a landscape startlingly similar to that of our favorite celestial body's.",
+        "cost": 2500
+    },
+    {
+        "name": "Arashiyama Bamboo Grove",
+        "location": "Japan",
+        "description": "Every traveler should experience the ethereal glow and seemingly endless heights of this bamboo grove on the outskirts of Kyoto. The experience even extends beyond the visual realm: In 1996, Japan's Ministry of the Environment included the sounds here—wood creaking, leaves rustling—as one of the top 100 Soundscapes of Japan.",
+        "cost": 3500
+    },
+    {
+        "name": "Avenue of the Baobabs",
+        "location": "Madagascar",
+        "description": "Separated from continental Africa by 250 miles of water, Madagascar is the greatest adventure you haven't had yet. The island nation's secrets include giant moths, bug-eyed lemurs, and places like the surreal Avenue of the Baobabs, where the centuries-old trees reach heights of nearly 100 feet.",
+        "cost": 4000
+    },
+    {
+        "name": "The Azores",
+        "location": "Portugal",
+        "description": "Roughly 900 miles off the coast of Lisbon, this Portuguese archipelago can inspire wanderlust with a single photo. The verdant valleys, steep ocean-side cliffs, rows of blue hydrangeas, and scattering of waterfalls make the Azores a paradise worth exploring—just make sure you visit before everyone you know beats you to it.",
+        "cost": 2000
+    },
+    {
+        "name": "Banff National Park",
+        "location": "Canada",
+        "description": "Easily one of the most beautiful spots in Canada, Banff National Park overwhelms with views of the Canadian Rockies and regular cast of wildlife. The park is also known for its abundance of beautiful lakes, including Lake Louise, Moraine Lake, and glacial Lake Minnewanka—each more pristine than the last.",
+        "cost": 5000
+    },
+    {
+        "name": "Boracay",
+        "location": "Philippines",
+        "description": "With its gentle coastlines and transporting sunsets, it's easy to see why Boracay was voted one of the best islands in the world by our readers. Unfortunately, it's become too touristed—the island closed for last year to compensate for overcrowding and unregulated development; it's since reopened to a limited number of visitors per day.",
+        "cost": 3000
+    },
+    {
+        "name": "Boulders Beach",
+        "location": "South Africa",
+        "description": "Located on the False Bay Coastline, about 17 miles south of Table Mountain, Boulders Beach shows off Cape Town's famously beautiful landscapes—bright blue water, granite boulders, and... penguins! Many people swim here just a few feet away from the adorable African penguin community, but feel free to just sit back and admire the beautiful coastline as well.",
+        "cost": 2500
+    },
+    {
+        "name": "Cabo San Lucas",
+        "location": "Mexico",
+        "description": "Home to 67 national parks, more than 5,000 miles of coastline, and landscapes ranging from deserts to snow-capped volcanoes, Mexico is so much more than the stuff of spring break clichés. Case in point: Cabo San Lucas. Venture outside of your all-inclusive resort to experience the region's turquoise waters, marine life, and iconic Arch of Cabo San Lucas, standing where the Gulf of California meets the Pacific Ocean.",
+        "cost": 3500
+    }
+]
+
+
