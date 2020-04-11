@@ -9,8 +9,8 @@
 import Foundation
 
 struct Nature: Decodable {
-    var name: String
-    var location: String
-    var description: String
-    var cost: Int
+    let name: String
+    let location: String
+    let description: String
+    let cost: Int
 }

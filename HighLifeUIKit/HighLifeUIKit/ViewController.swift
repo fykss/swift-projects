@@ -19,18 +19,28 @@ class ViewController: UITableViewController {
         title = "Nature"
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nature.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let natureOne = nature[indexPath.row]
         
+//        cell.imageView?.image = UIImage(named: natureOne.name)
+        
         cell.textLabel?.text = natureOne.name
+        cell.detailTextLabel?.text = natureOne.location
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = NatureViewController()
+        
+        detailVC.nature = nature[indexPath.row]
+        
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 

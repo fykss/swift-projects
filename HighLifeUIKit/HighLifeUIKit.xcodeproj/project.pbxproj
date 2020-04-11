@@ -18,6 +18,7 @@
 		9E8E09202442002F00CA9AC9 /* examples.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E8E091F2442002F00CA9AC9 /* examples.json */; };
 		9E8E0922244200A200CA9AC9 /* Bundle-Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E0921244200A200CA9AC9 /* Bundle-Decoding.swift */; };
 		9E8E09242442023500CA9AC9 /* Nature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E09232442023500CA9AC9 /* Nature.swift */; };
+		9E8E092624423D1700CA9AC9 /* NatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8E092524423D1700CA9AC9 /* NatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9E8E091F2442002F00CA9AC9 /* examples.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = examples.json; sourceTree = "<group>"; };
 		9E8E0921244200A200CA9AC9 /* Bundle-Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decoding.swift"; sourceTree = "<group>"; };
 		9E8E09232442023500CA9AC9 /* Nature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nature.swift; sourceTree = "<group>"; };
+		9E8E092524423D1700CA9AC9 /* NatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				9E8E090324406F2500CA9AC9 /* AppDelegate.swift */,
 				9E8E090524406F2500CA9AC9 /* SceneDelegate.swift */,
 				9E8E090724406F2500CA9AC9 /* ViewController.swift */,
+				9E8E092524423D1700CA9AC9 /* NatureViewController.swift */,
 				9E8E0921244200A200CA9AC9 /* Bundle-Decoding.swift */,
 				9E8E09232442023500CA9AC9 /* Nature.swift */,
 				9E8E090924406F2500CA9AC9 /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				9E8E0922244200A200CA9AC9 /* Bundle-Decoding.swift in Sources */,
 				9E8E090824406F2500CA9AC9 /* ViewController.swift in Sources */,
 				9E8E091C2440962300CA9AC9 /* DataApiManager.swift in Sources */,
+				9E8E092624423D1700CA9AC9 /* NatureViewController.swift in Sources */,
 				9E8E09242442023500CA9AC9 /* Nature.swift in Sources */,
 				9E8E090424406F2500CA9AC9 /* AppDelegate.swift in Sources */,
 				9E8E090624406F2500CA9AC9 /* SceneDelegate.swift in Sources */,
